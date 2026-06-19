@@ -14,6 +14,7 @@ void loop() {
   float temp = voltage * 100;
   //Using a buzzer or LED, signals when the temperature reaches 35 degree 
   if (temp>35){
+    //Repeat the signals 4 times
     for(int i=0;i<=3;i++){
       digitalWrite(7, HIGH);
       delay(100);
